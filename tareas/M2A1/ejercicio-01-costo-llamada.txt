@@ -1,0 +1,64 @@
+"""
+La política de cobro de una compañía telefónica es: cuando se realiza una llamada, el cobro es por el tiempo que ésta dura, 
+de tal forma que los primeros cinco minutos cuestan 1 euro, los siguientes tres, 80 céntimos, los siguientes dos minutos, 
+70 céntimos, y a partir del décimo minuto, 50 céntimos. Además, se carga un impuesto de 3 % cuando es domingo, y si es otro día, 
+en turno de mañana, 15 %, y en turno de tarde, 10 %. Realice un algoritmo para determinar cuánto debe pagar por cada concepto 
+una persona que realiza una llamada.
+"""
+
+ 1.- Inicio
+ 2.- Inicializar variables
+    2.1.- costo = 0
+    2.2.- llamadaLarga = falso
+    2.3.- llamada10 = falso
+    2.4.- llamada8 = falso
+    2.5.- llamada5 = falso
+    2.6.- impuesto = 0.0
+    2.7.- domingo = falso
+    2.8.- manana = falso
+    2.9.- tarde = falso
+    2.10.- tiempo = 0
+    2.11.- hora = 0
+ 3.- Obtener la fecha del sistema
+ 4.- Obtener la hora a partir de la fecha en modo 24Hrs
+ 5.- Obtener el tiempo de la llamada -> tiempo
+ 6.- Si tiempo mayor a 10 minutos:
+    6.1.- asignar a costo 1 + 0.8 + 0.7 + 0.5
+    6.2.- asignar verdadero a llamadaLarga, llamada10, llamada8 y llamada5
+ 7.- Si tiempo mayor a 8 minutos:
+    7.1.- asignar a costo 1 + 0.8 + 0.7
+    7.2.- asignar verdadero a llamada10, llamada8 y llamada5
+ 8.- Si tiempo mayor a 5 minutos:
+    8.1.- asignar a costo 1 + 0.8
+    8.2.- asignar verdadero a llamada8 y llamada5 
+ 9.- Otro caso: 
+    9.1.- asignar a costo 1
+    9.2.- asignar verdadero a llamada5
+10.- Obtener el dia de la semana de la fecha
+11.- Si dia de la semana es domingo:
+    12.1.- asignar verdaderoa domingo
+    12.2.- asignar a impuesto = costo*0.03
+12.- Otro caso:
+    12.1.- Si la hora es menor a 12
+    12.1.1.- asignar verdadero a manana
+    12.1.2.- asignar a impuesto = costo*0.15
+    12.2.- Otro caso:
+    12.2.1.- asignar verdadero a tarde
+    12.2.2.- asignar a impuesto = costo*0.1
+13.- Si llamadaLarga es verdadero:
+    13.1.- imprime "Costo de llamada despues de 10 minutos: 50 ¢"
+14.- Si llamada10 es verdadero:
+    14.1.- imprime "Costo de llamada de 8 a 10 minutos: 70 ¢"
+15.- Si llamada8 es verdadero:
+    15.1.- imprime "Costo de llamada de 5 a 8 minutos: 80 ¢"
+16.- Si llamada5 es verdadero:
+    16.1.- imprime "Costo de llamada hasta 5 minutos: 1 €"
+17.- imprime        "Costo de llamada:      " costo "€"
+18.- Si domingo es verdadero:
+    18.1.- imprime  "Impuesto de domingo:   " impuesto "€"
+19.- Si manana es verdadero:
+    19.1.- imprime  "Impuesto matutino:     " impuesto "€"
+20.- Si tarde es verdadero:
+    20.1.- imprime  "Impuesto vespertino:   " impuesto "€"
+21.- imprime        "Total con inpuesto:    " costo + impuesto "€"
+22.- Fin
