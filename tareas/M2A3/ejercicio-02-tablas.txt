@@ -1,0 +1,17 @@
+"""
+    Algoritmo que muestre la tabla de multiplicar de los números 1,2,3,4 y 5.
+"""
+
+1.- Inicio
+2.- Inicializa variables
+    2.1.- num1 = 5
+    2.2.- num2 = 10
+    2.3.- idx = 1
+    2.4.- subidx = 1
+3.- Repite num1 veces:
+    3.1.- Repite num2 veces:
+        3.1.1.- Imprime idx " x " subidx " = " idx*subidx
+        3.1.2.- subidx += 1
+    3.2.- idx += 1
+    3.3.- subidx = 1
+4.- Fin

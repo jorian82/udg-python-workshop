@@ -1,0 +1,26 @@
+"""
+    algoritmo que pida números (se pedirá por teclado la cantidad de números a introducir). 
+    El programa debe informar de cuantos números introducidos son mayores que 0, menores 
+    que 0 e iguales a 0.
+"""
+
+1.- Inicio
+2.- Inicializa variables:
+    2.1.- total = 0
+    2.2.- cont = 1
+    2.3.- ceros = 0
+    2.4.- mayores = 0
+    2.5.- menores = 0
+    2.6.- numero = 0
+3.- Introduzca la cantidad de numeros -> total
+4.- Mientras cont < total:
+    4.1.- Introduzca un numero -> numero
+    4.2.- Si numero == 0:
+        4.2.1.- ceros += 1
+    4.3.- Si numero > 0:
+        4.3.1.- mayores += 1
+    4.4.- Otro caso:
+        4.4.1.- menores += 1
+    4.5.- cont += 1
+5.- Imprime: "Se introdujeron " -> ceros " ceros, " -> mayores " numeros positivos y " -> menores " numeros negativos"
+6.- Fin

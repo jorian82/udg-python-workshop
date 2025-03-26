@@ -1,0 +1,18 @@
+"""
+    Pida caracteres e imprima ‘VOCAL’ si son vocales y ‘NO VOCAL’ en caso contrario, 
+    el programa termina cuando se introduce un espacio
+"""
+
+1.- Inicio
+2.- Inicializa variables:
+    2.1.- vocales = ['a','e','i','o','u']
+    2.2.- caracter = ''
+3.- Pida un caracter -> caracter
+4.- Mientras caracter != ' '
+    4.1.- Si vocales contiene caracter:
+        4.1.1.- Imprime: "VOCAL"
+    4.2.- Otro caso:
+        4.2.1.- Imprime: "NO VOCAL"
+    4.3.- Pida un caracter -> caracter
+5.- Imprime: "Ha intrpducido un espacio, termina programa"
+6.- Fin

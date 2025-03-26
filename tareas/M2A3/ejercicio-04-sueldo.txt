@@ -1,0 +1,20 @@
+"""
+    Una empresa tiene el registro de las horas que trabaja diariamente un empleado 
+    durante la semana (seis días) y requiere determinar el total de éstas, así como 
+    el sueldo que recibirá por las horas trabajadas.
+"""
+
+1.- Inicio
+2.- Inicializa variables:
+    2.1.- horas = 0
+    2.2.- salario = 0
+    2.3.- dia = 1
+    2.4.- total = 0
+3.- Introduzca el monto a pagar por hora: -> salario
+4.- Repetir 6 veces:
+    4.1.- Pida "Introduzca las horas trabajadas el dia " dia ": " -> horas
+    4.2.- dia += 1
+    4.3.- total += horas
+5.- Imprima: "Las horas trabajadas son: " total
+6.- Imprima: "El monto a pagar es: " total*salario
+7.- Fin

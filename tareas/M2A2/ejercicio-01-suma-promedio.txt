@@ -1,0 +1,21 @@
+"""
+    Pida números hasta que se introduzca un cero. Debe imprimir la suma y el promedio de 
+    todos los números introducidos
+"""
+
+1.- Inicio
+2.- Inicializa variables
+    2.1.- num = 0
+    2.2.- suma = 0
+    2.3.- cont = 0
+3.- Pedir numero -> num
+4.- Mientras num != 0
+    4.1.- suma += num
+    4.2.- cont += 1
+    4.3.- Pedir numero -> num
+5.- Imprime: "La suma de los numeros es: " -> suma
+6.- Si cont > 0:
+    6.1.- Imprime: "El promedio de los numeros es: " -> suma/cont
+7.- Otro caso: 
+    7.1.- Imprime: "El promedio no puede calcularse, no hay valores introducidos"
+8.- Fin

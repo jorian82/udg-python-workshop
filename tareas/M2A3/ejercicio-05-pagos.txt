@@ -1,0 +1,19 @@
+"""
+    Una persona adquirió un producto para pagar en 20 meses. El primer mes pagó 10 €, 
+    el segundo 20 €, el tercero 40 € y así sucesivamente. Realizar un algoritmo para 
+    determinar cuánto debe pagar mensualmente y el total de lo que pagó después de los 
+    20 meses.
+"""
+
+1.- Inicio
+2.- Inicializar variables:
+    2.1.- mes = 1
+    2.2.- pago = 10
+    2.3.- total = 0
+3.- Repetir 20 veces:
+    3.1.- Imprime: "El mes " mes " paga: " pago
+    3.2.- pago *=2
+    3.3.- mes += 1
+    3.4.- total += pago
+4.- Imprime: "El total pagado despues de 20 meses fue: " total
+5.- Fin
